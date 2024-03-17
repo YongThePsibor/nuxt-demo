@@ -6,12 +6,32 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "lint": "eslint --ext \".js,.jsx,.ts,.tsx,.vue\" --fix --ignore-path .gitignore .",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "engines": {
+    "node": "^18"
+  },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "nuxt": "^3.8.1",
+    "@antfu/eslint-config": "^0.26.3",
+    "@nuxt/devtools": "^1.0.6",
+    "@nuxtjs/stylelint-module": "^5.2.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@types/node": "18",
+    "@unocss/nuxt": "^0.58.2",
+    "@vueuse/nuxt": "^10.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "less": "^4.2.0",
+    "nuxt": "^3.9.3",
+    "nuxt-lodash": "^2.5.3",
+    "prettier": "^2.8.8",
+    "radix-vue": "^1.4.8",
+    "stylelint": "^16.2.1",
+    "typescript": "^5.3.3",
+    "vite-plugin-node-polyfills": "^0.21.0",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   }

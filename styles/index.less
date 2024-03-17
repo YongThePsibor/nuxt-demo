@@ -1,0 +1,30 @@
+@import './vars.less';
+
+:root {
+  @{var-theme-color-name}: @theme-color1;
+  @{var-text-color1-name}: @text-color1;
+  @{var-text-color2-name}: @text-color2;
+  @{var-text-color3-name}: @text-color3;
+  @{var-bg-color-name}: @bg-color1;
+  @{var-selection-color-name}: @selection-color;
+  .@{prefix}-dark {
+    @{var-theme-color-name}: @dark-theme-color1;
+    @{var-text-color1-name}: @dark-text-color1;
+    @{var-text-color2-name}: @dark-text-color2;
+    @{var-text-color3-name}: @dark-text-color3;
+    @{var-bg-color-name}: @dark-bg-color1;
+    @{var-selection-color-name}: @dark-selection-color;
+  }
+}
+
+body {
+  color: var(@var-text-color1-name);
+  background: var(@var-bg-color-name);
+  ::selection {
+    background: var(@var-selection-color-name);
+  }
+}
+
+html, body {
+  height: 100%;
+}

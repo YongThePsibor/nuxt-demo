@@ -1,0 +1,38 @@
+@prefix: demo;
+
+/* ----------------------------------light theme---------------------------------- */
+/* bg */
+@bg-color1: #f3f5f9;
+/* text */
+@text-color1: #333;
+@text-color2: #666;
+@text-color3: #999;
+/* theme */
+@theme-color1: #4e5e92;
+@theme-color2: lighten(@theme-color1, 0.5);
+@theme-color3: lighten(@theme-color1, 0.9);
+/* selection */
+@selection-color: ~'@{theme-color1}66';
+/* ----------------------------------light theme---------------------------------- */
+/* ----------------------------------dark theme---------------------------------- */
+/* bg */
+@dark-bg-color1: #282828;
+/* text */
+@dark-text-color1: #ddd;
+@dark-text-color2: #aaa;
+@dark-text-color3: #666;
+/* theme */
+@dark-theme-color1: @theme-color1;
+@dark-theme-color2: lighten(@dark-theme-color1, 0.5);
+@dark-theme-color3: lighten(@dark-theme-color1, 0.9);
+/* selection */
+@dark-selection-color: ~'@{dark-theme-color1}66';
+/* ----------------------------------dark theme---------------------------------- */
+
+/** css var names */
+@var-theme-color-name: ~'--@{prefix}-primary-color';
+@var-text-color1-name: ~'--@{prefix}-text-color1';
+@var-text-color2-name: ~'--@{prefix}-text-color2';
+@var-text-color3-name: ~'--@{prefix}-text-color3';
+@var-bg-color-name: ~'--@{prefix}-bg-color';
+@var-selection-color-name: ~'--@{prefix}-selection-color';
